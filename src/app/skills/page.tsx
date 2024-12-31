@@ -3,7 +3,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { FaHome, FaUserAlt, FaFolderOpen, FaTasks, FaShareAlt, FaFacebook, FaMoon, FaSun, FaGithub } from "react-icons/fa";
+import { FaShareAlt, FaFacebook, FaMoon, FaSun, FaGithub } from "react-icons/fa";
 import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
 import {
@@ -12,13 +12,10 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import Introduction from "@/components/Introduction";
-import About from "@/components/About";
-import Resume from "@/components/Resume";
-import Portfolio from "@/components/Portfolio";
 import Footer from "@/components/Footer";
 import Profile from "@/components/Profile";
 import BgLines from "@/components/BgLines";
+import Skills from "@/components/Skills";
 const ModeToggle = () => {
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
@@ -97,36 +94,6 @@ const MobileMenuBar = () => {
 }
 const MobileMenu = () => {
   const { isMenuOpen, toggleMenu } = React.useContext(MenuContext);
-  const [activeSection, setActiveSection] = useState('skills');
-  
-  const menuItems = [
-    { id: 'home', label: 'Home', icon: <FaHome /> },
-    { id: 'about', label: 'About', icon: <FaUserAlt /> },
-    { id: 'skills', label: 'Skills', icon: <FaTasks /> },
-    { id: 'resume', label: 'Resume', icon: <FaFolderOpen /> },
-    { id: 'portfolio', label: 'Portfolio', icon: <FaFolderOpen /> }
-  ];
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = menuItems.map(item => document.getElementById(item.id));
-      const scrollPosition = window.scrollY + 100;
-
-      sections.forEach((section) => {
-        if (section) {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.clientHeight;
-
-          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-            setActiveSection(section.id);
-          }
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
     <div className={`mobile-menu fixed top-0 w-full max-w-mobilemenu bg-flashWhite dark:bg-nightBlack z-999 h-full xl:hidden transition-all duration-300 ${
@@ -141,20 +108,6 @@ const MobileMenu = () => {
       
       <div className="mb-6 text-lg font-medium text-black dark:text-white">Menu</div>
       
-      <ul className="space-y-5 font-normal">
-        {menuItems.map((item) => (
-          <li key={item.id} className={`relative group ${activeSection === item.id ? 'active' : ''}`}>
-            <Link href={`#${item.id}`} className="flex items-center space-x-2 group">
-              <span className={`w-5 ${activeSection === item.id ? 'text-theme' : 'text-black dark:text-white'}`}>
-                {item.icon}
-              </span>
-              <span className={`transition-colors ${activeSection === item.id ? 'text-theme' : 'group-hover:text-theme dark:text-white'}`}>
-                {item.label}
-              </span>
-            </Link>
-          </li>
-        ))}
-      </ul>
 
       <div className="mt-8 border-t border-gray-200 dark:border-gray-700 pt-8">
         <div className="mb-4 font-medium text-black dark:text-white">
@@ -174,45 +127,7 @@ const MobileMenu = () => {
 }
 
 const NavRight = () => {
-  const [activeSection, setActiveSection] = useState('skills');
   
-  const navItems = [
-    { id: 'home', title: 'Home', icon: <FaHome /> },
-    { id: 'about', title: 'About', icon: <FaUserAlt /> },
-    { id: 'resume', title: 'Resume', icon: <FaFolderOpen /> },
-    { id: 'portfolio', title: 'Portfolio', icon: <FaTasks /> }
-  ];
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = navItems.map(item => document.getElementById(item.id));
-      const scrollPosition = window.scrollY + 100;
-
-      sections.forEach((section) => {
-        if (section) {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.clientHeight;
-
-          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-            setActiveSection(section.id);
-          }
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const scrollToSection = (event: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
-    event.preventDefault();
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      setActiveSection(targetId);
-    }
-  };
-
   return (
     <div className="minfo__nav__wrapper bg-snowWhite dark:bg-power__black max-xl:hidden fixed top-1/2 -translate-y-1/2 right-4 2xl:right-14 z-999 flex items-center flex-col gap-4 border border-platinum dark:border-metalBlack rounded-4xl px-2.5 py-4">
       <div className="flex border rounded-full w-15 h-15 border-platinum dark:border-metalBlack flex-center hover:bg-white dark:hover:bg-metalBlack transition-all">
@@ -220,33 +135,6 @@ const NavRight = () => {
           <Image src="/img/site-logo.svg" width={29} height={29} alt="Site Logo" priority />
         </Link>
       </div>
-
-      <div className="my-4">
-        <ul className="space-y-2 text-center">
-          {navItems.map((item) => (
-            <li key={item.id} className={`group ${activeSection === item.id ? 'active' : ''}`}>
-              <Link
-                href={`#${item.id}`}
-                onClick={(e) => scrollToSection(e, item.id)}
-                className={`w-9 h-9 rounded-full flex-center transition-all duration-300
-                  ${activeSection === item.id 
-                    ? 'bg-white dark:bg-metalBlack' 
-                    : 'group-hover:bg-white dark:group-hover:bg-metalBlack'}`}
-                data-title={item.title}
-              >
-                <span className={`transition-colors
-                  ${activeSection === item.id 
-                    ? 'text-theme' 
-                    : 'text-black dark:text-white group-hover:text-theme'}`}
-                >
-                  {item.icon}
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-
       <div className="relative share group">
         <button
           className="w-10 h-10 text-sm border rounded-full border-platinum dark:border-metalBlack flex-center group-hover:bg-white dark:group-hover:bg-metalBlack text-black dark:text-white transition-colors"
@@ -268,67 +156,63 @@ const NavRight = () => {
   )
 }
 
-export default function Home() {
+const PageSkills = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
-
-  // Mount check for hydration
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-    if (!isMenuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
-  };
-
-  useEffect(() => {
-    return () => {
-      document.body.style.overflow = 'auto';
+    const [mounted, setMounted] = useState(false);
+  
+    // Mount check for hydration
+    useEffect(() => {
+      setMounted(true);
+    }, []);
+  
+    const toggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen);
+      if (!isMenuOpen) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'auto';
+      }
     };
-  }, []);
-
-  // Prevent hydration mismatch by not rendering until mounted
-  if (!mounted) {
-    return null; // or a loading spinner/skeleton
-  }
+  
+    useEffect(() => {
+      return () => {
+        document.body.style.overflow = 'auto';
+      };
+    }, []);
+  
+    // Prevent hydration mismatch by not rendering until mounted
+    if (!mounted) {
+      return null; // or a loading spinner/skeleton
+    }
 
   return (
     <MenuContext.Provider value={{ isMenuOpen, toggleMenu }}>
-      <div className="relative min-h-screen bg-gray-50 dark:bg-gray-900" suppressHydrationWarning>
-        
-        {/* App Start */}
+      <div className="relative min-h-screen bg-gray-50 dark:bg-gray-900">
         <div className="relative pt-10 max-xl:pt-20">
           {/* Overlay */}
           <div 
-              className={`menu-overlay fixed top-0 left-0 w-full h-full bg-black/60 transition-all duration-200 z-998 ${
-                isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
-              }`}
-              onClick={toggleMenu}
-            />
+            className={`menu-overlay fixed top-0 left-0 w-full h-full bg-black/60 transition-all duration-200 z-998 ${
+              isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+            }`}
+            onClick={toggleMenu}
+          />
+          
           <div className="max-lg:px-4">
             <MobileMenuBar />
             <MobileMenu />
             <Profile />
             <NavRight />
-            <div className="relative mx-auto max-w-container xl:max-2xl:max-w-65rem *:py-5 xl:*:py-3.5 *:max-w-content max-xl:*:mx-auto xl:*:ml-auto xl:max-2xl:*:max-w-50rem">
-                  <Introduction />
-                  <About />
-                  <Resume />
-                  <Portfolio />
-            </div>
+            
+            <main className="relative mx-auto max-w-container xl:max-2xl:max-w-65rem">
+              <div className="py-5 xl:py-3.5 max-w-content max-xl:mx-auto xl:ml-auto xl:max-2xl:max-w-50rem">
+                <Skills />
+              </div>
+            </main>
+            
             <Footer />
           </div>
         </div>
-        {/* App End */}
-        {/* start Background Line and Animation */}
         <BgLines />
-        {/* end Background Line and Animation */}
-
         <div suppressHydrationWarning>
           <ModeToggle />
         </div>
@@ -336,3 +220,5 @@ export default function Home() {
     </MenuContext.Provider>
   );
 }
+
+export default PageSkills;

@@ -4606,3 +4606,76 @@ html.dark .portfolio_wrapper .info span {
 .content-dark-mode {
   z-index: 9999;
 }
+.img-clip-path {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Add backdrop blur utility if not already present */
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    to right,
+    var(--tw-gradient-from) 8%,
+    var(--tw-gradient-via) 18%,
+    var(--tw-gradient-to) 33%
+  );
+  background-size: 800px 100px;
+  animation: shimmer 1.5s linear infinite;
+}
+
+/* Dark mode support */
+.dark .skeleton-shimmer {
+  --tw-gradient-from: #374151;
+  --tw-gradient-via: #4B5563;
+  --tw-gradient-to: #374151;
+}
+
+/* Light mode */
+.skeleton-shimmer {
+  --tw-gradient-from: #E5E7EB;
+  --tw-gradient-via: #F3F4F6;
+  --tw-gradient-to: #E5E7EB;
+}
