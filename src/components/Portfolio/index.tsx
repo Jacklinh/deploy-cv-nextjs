@@ -6,9 +6,9 @@ import { FaTasks, FaFolderOpen } from "react-icons/fa";
 import Loading from "@/components/Loading";
 
 const Portfolio = () => {
-    const [visibleItems, setVisibleItems] = useState(6);
+    const [visibleItems, setVisibleItems] = useState(4);
     const [isLoading, setIsLoading] = useState(false);
-    const itemsPerLoad = 3;
+    const itemsPerLoad = 2;
 
     const items = [
         {
@@ -26,11 +26,28 @@ const Portfolio = () => {
             category: "CMS"
         },
         {
-            link: "https://deploy-rinshop-admin.vercel.app/login",
+            link: "https://deploy-rinshop-admin.vercel.app/",
             image: "/img/portfolio/portfolio3.png",
-            alt: "portfolio",
+            alt: "rinkart dashboard",
             title: "Dashboard",
-            category: "MERN Stack"
+            category: "MERN Stack",
+            github: 'https://github.com/Jacklinh/deploy-rinshop-admin'
+        },
+        {
+            link: "https://deploy-rinshop-client-nextjs.vercel.app/",
+            image: "/img/portfolio/portfolio11.png",
+            alt: "rinkart client",
+            title: "Nextjs",
+            category: "MERN Stack",
+            github: 'https://github.com/Jacklinh/deploy-rinshop-client-nextjs'
+        },
+        {
+            link: "https://deploy-rinshop-restfulapi-mongoose.vercel.app/",
+            image: "/img/portfolio/portfolio12.png",
+            alt: "restfulapi-mongoose",
+            title: "Restfulapi",
+            category: "MERN Stack",
+            github: 'https://github.com/Jacklinh/deploy-rinshop-restfulapi-mongoose'
         },
         {
             link: "https://www.city.kashiwa.lg.jp/index.html",
@@ -132,7 +149,7 @@ const Portfolio = () => {
                                     {item.title}
                                 </div>
                             </Link>
-                            <ul className="absolute z-10 transition-all duration-500 opacity-0 md:top-9 md:right-9 top-6 right-6 group-hover:opacity-100">
+                            <ul className="flex gap-x-2 absolute z-10 transition-all duration-500 opacity-0 md:top-9 md:right-9 top-6 right-6 group-hover:opacity-100">
                                 <li>
                                     <span
                                         className="inline-flex items-center gap-2 px-5 py-3 text-sm font-light leading-none text-white transition-colors bg-metalBlack rounded-3xl hover:text-theme"
@@ -140,6 +157,18 @@ const Portfolio = () => {
                                         {item.category}
                                     </span>
                                 </li>
+                                {item.github ? (
+                                    <li>
+                                    <Link
+                                         target="_blank"
+                                         href={item.github}
+                                        className="inline-flex items-center gap-2 px-5 py-3 text-sm font-light leading-none text-white transition-colors bg-metalBlack rounded-3xl hover:text-theme"
+                                    >
+                                        Link github
+                                    </Link>
+                                </li>
+                                ) : ''}
+                                
                             </ul>
                         </div>
                     ))}
