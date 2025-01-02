@@ -7,7 +7,7 @@ const Profile = () => {
 
             <div className="p-3 max-xl:mb-3 overflow-hidden minfo__sidebar bg-white dark:bg-nightBlack rounded-2xl">
                 <div className="mx-4 mt-12 text-center user-info lg:mx-6">
-                    <div 
+                    <div
                         className="w-56 h-72 mb-2.5 block mx-auto border-6 border-platinum dark:border-[#2f2f2f] overflow-hidden rounded-full *:w-full *:h-full *:rounded-full">
                         <Image src="/img/avatar.jpg" width={500} height={500} alt="van linh" />
                     </div>
@@ -79,13 +79,13 @@ const Profile = () => {
                                         className="text-theme"
                                         stroke="currentColor"
                                         strokeDasharray="280"
-                                        strokeDashoffset="140"
+                                        strokeDashoffset="0"
                                         strokeLinecap="round"
                                         transform="rotate(-90 40 40)"
                                     />
                                 </svg>
                                 <div className="absolute inset-0 flex items-center justify-center text-lg font-semibold text-theme">
-                                    70%
+                                    100%
                                 </div>
                             </div>
                             <p className="text-[13px] font-normal dark:font-light text-black dark:text-white/90">MERN Stack</p>
