@@ -19,9 +19,9 @@ const Introduction = () => {
                             With a passion for developing modern web applications,
                             I not only master the
                             {" "}<span className="font-medium text-black dark:text-white/90">
-                                Frontend Developer
+                                Frontend Developer for 5 years
                             </span>{" "}
-                            but also expand my skills to the backend with Node.js, Express.js, and MongoDB, Reactjs, Nextjs.
+                            but also expand my skills to the backend for 1 year with Node.js, Express.js, and MongoDB, Reactjs, Nextjs.
                             Always focusing on performance, security, and user experience,
                             I aspire to bring breakthrough technology solutions that are both optimized and scalable.
                         </p>
