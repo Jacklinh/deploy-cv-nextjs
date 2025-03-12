@@ -52,6 +52,19 @@ const Resume = () => {
                                 </p>
                             </div>
                         </li>
+                        <li>
+                            <div className="flex items-center justify-between mb-5 md:w-64 md:block md:mb-0">
+                                <h6 className="text-sm font-medium text-black dark:text-white text-opacity-60 md:text-base md:text-opacity-100">
+                                    Freelancer
+                                </h6>
+                                <p className="text-[13px] md:text-sm text-theme">Present</p>
+                            </div>
+                            <div className="md:flex-1 md:pl-16 relative md:before:content-[''] md:before:absolute md:before:-left-1 md:before:top-3 md:before:w-2 md:before:h-2 md:before:bg-theme md:before:rounded-full md:before:shadow-dots_glow">
+                                <h4 className="text-xl xl:text-2xl font-medium xl:font-medium leading-7 text-black dark:text-white mb-2.5">
+                                    Freelancer web developer
+                                </h4>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <br />
