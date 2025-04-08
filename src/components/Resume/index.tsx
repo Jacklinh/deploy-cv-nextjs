@@ -43,12 +43,17 @@ const Resume = () => {
                             </div>
                             <div className="md:flex-1 md:pl-16 relative md:before:content-[''] md:before:absolute md:before:-left-1 md:before:top-3 md:before:w-2 md:before:h-2 md:before:bg-theme md:before:rounded-full md:before:shadow-dots_glow">
                                 <h4 className="text-xl xl:text-2xl font-medium xl:font-medium leading-7 text-black dark:text-white mb-2.5">
-                                    Developer Front-End for CMS
+                                    Front-End Developer for CMS (most recent position Senior)
                                 </h4>
                                 <p>
-                                    Convert PSD to HTML, CSS, JavaScript, Bootstrap...according to pixel perfect design standards PSD, W3C, clean code and optimize.
-                                    Coding Convention For CMS8341 check Accessibility(heading, Color Contrast, font size, source, form ...), Usability(print, off javascript, Keyboard Focus, read voice), Fixed form, Library.
-                                    Using React.JS, Ant Design creates tools to serve the work in the team.
+                                    receive task from leader, convert design psd to front end interface, ensure pixel perfect design standard to hand over to leader.
+check w3c, clear code, responsive to ensure functions operate according to spec requirements of Japanese side.
+Check Accessibility for heading, color constrast.
+Check Usability for print, off javascript, keyboard focus, read voice.
+Check product on browsers, real devices such as iphone, android, tablet.
+Coding and review member on processing fixed form, library according to spec coding cms required by Japanese side. ensure output quality to hand over to brse.
+Upload code to cms8341 system from Japanese side, create template to verify if the system operates according to requirements.
+Assist leader to review code member, cms8341 system. If there is any backlog, member will join to handle it too difficult.
                                 </p>
                             </div>
                         </li>
