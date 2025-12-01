@@ -30,9 +30,9 @@ const Resume = () => {
                                     Office Informatics & Scratch Teacher - Remote
                                 </h4>
                                 <p>
-                                    - Teaching office informatics (Microsoft Word, Excel, PowerPoint) to students according to the center's program.<br />
-                                    - Teaching Scratch programming to elementary school students, making simple game projects, animations, simulations.<br />
-                                    - Monitor students' learning progress, evaluate students' abilities and report to parents/centers. 
+                                &#8727; Teaching office informatics (Microsoft Word, Excel, PowerPoint) to students according to the center&#39;s program.<br />
+                                &#8727; Teaching Scratch programming to elementary school students, making simple game projects, animations, simulations.<br />
+                                &#8727; Monitor students&#39; learning progress, evaluate students&#39; abilities and report to parents/centers. 
                                 </p>
                             </div>
                         </li>
@@ -50,11 +50,11 @@ const Resume = () => {
                                     Remote Frontend Developer (Vue.js & Laravel)
                                 </h4>
                                 <p>
-                                    - Convert Figma design into pixel perfect web interface, clear code and responsive.<br />
-                                    - Optimize UI/UX, responsive and ensure interface performance. <br />
-                                    - Optimize front-end performance, ensure page loading speed, caching, lazy loading, code splitting. <br />
-                                    - Participate in code review and contribute ideas to improve the product. <br />
-                                    - Coordinate with QC in testing & fixing errors. <br />
+                                &#8727; Convert Figma design into pixel perfect web interface, clear code and responsive.<br />
+                                &#8727; Optimize UI/UX, responsive and ensure interface performance. <br />
+                                &#8727; Optimize front-end performance, ensure page loading speed, caching, lazy loading, code splitting. <br />
+                                &#8727; Participate in code review and contribute ideas to improve the product. <br />
+                                &#8727; Coordinate with QC in testing & fixing errors. <br />
                                 </p>
                             </div>
                         </li>
@@ -70,11 +70,11 @@ const Resume = () => {
                                     Front-End Developer for CMS (most recent position Senior)
                                 </h4>
                                 <p>
-                                    - Take the task from the leader and convert PSD design into pixel perfect web interface, clear code, W3C standard and responsive.<br />
-                                    - Test Accessibility (heading, color contrast) and Usability (print, no javascript, keyboard focus, read voice).<br />
-                                    - Test the product on multiple browsers and real devices (iPhone, Android, Tablet).<br />
-                                    - Upload and test the sample on CMS8341 system (Coding and review member on processing fixed form, library according to spec coding cms required), ensure working as required before handing over to BrSE.<br />
-                                    - Support the team leader in code review and participate in handling complex backlogs when needed.
+                                &#8727; Take the task from the leader and convert PSD design into pixel perfect web interface, clear code, W3C standard and responsive.<br />
+                                &#8727; Test Accessibility (heading, color contrast) and Usability (print, no javascript, keyboard focus, read voice).<br />
+                                &#8727; Test the product on multiple browsers and real devices (iPhone, Android, Tablet).<br />
+                                &#8727; Upload and test the sample on CMS8341 system (Coding and review member on processing fixed form, library according to spec coding cms required), ensure working as required before handing over to BrSE.<br />
+                                &#8727; Support the team leader in code review and participate in handling complex backlogs when needed.
                                 </p>
                             </div>
                         </li>
