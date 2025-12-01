@@ -247,7 +247,7 @@ const NavRight = () => {
         </ul>
       </div>
 
-      <div className="relative share group">
+      <div className="relative share group hidden">
         <button
           className="w-10 h-10 text-sm border rounded-full border-platinum dark:border-metalBlack flex-center group-hover:bg-white dark:group-hover:bg-metalBlack text-black dark:text-white transition-colors"
           aria-label="Share"
