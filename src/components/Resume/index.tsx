@@ -16,6 +16,68 @@ const Resume = () => {
                 {/*./section-title*/}
                 <div className="experience">
                     <ul className="space-y-5 md:space-y-11 relative md:before:content-[''] md:before:absolute md:before:left-64 md:before:border-r md:before:border-platinum md:dark:before:border-metalBlack md:before:h-[calc(100%_-1.5rem)] md:before:top-1/2 md:before:-translate-y-1/2 *:p-5 *:border *:rounded-xl md:*:flex max-md:*:space-y-2 *:border-platinum dark:*:border-metalBlack md:*:border-0 md:*:p-0 md:*:rounded-none">
+                    <li>
+                            <div className="flex items-center justify-between mb-5 md:w-64 md:block md:mb-0">
+                                <h6 className="text-sm font-medium text-black dark:text-white text-opacity-60 md:text-base md:text-opacity-100">
+                                    Techkids Academy
+                                </h6>
+                                <p className="text-[13px] md:text-sm text-theme">
+                                    2025 - Present
+                                </p>
+                            </div>
+                            <div className="md:flex-1 md:pl-16 relative md:before:content-[''] md:before:absolute md:before:-left-1 md:before:top-3 md:before:w-2 md:before:h-2 md:before:bg-theme md:before:rounded-full md:before:shadow-dots_glow">
+                                <h4 className="text-xl xl:text-2xl font-medium xl:font-medium leading-7 text-black dark:text-white mb-2.5">
+                                    Office Informatics & Scratch Teacher - Remote
+                                </h4>
+                                <p>
+                                    - Teaching office informatics (Microsoft Word, Excel, PowerPoint) to students according to the center's program.<br />
+                                    - Teaching Scratch programming to elementary school students, making simple game projects, animations, simulations.<br />
+                                    - Monitor students' learning progress, evaluate students' abilities and report to parents/centers. 
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="flex items-center justify-between mb-5 md:w-64 md:block md:mb-0">
+                                <h6 className="text-sm font-medium text-black dark:text-white text-opacity-60 md:text-base md:text-opacity-100">
+                                    SMO Technology Company Limited
+                                </h6>
+                                <p className="text-[13px] md:text-sm text-theme">
+                                    2025 - Present
+                                </p>
+                            </div>
+                            <div className="md:flex-1 md:pl-16 relative md:before:content-[''] md:before:absolute md:before:-left-1 md:before:top-3 md:before:w-2 md:before:h-2 md:before:bg-theme md:before:rounded-full md:before:shadow-dots_glow">
+                                <h4 className="text-xl xl:text-2xl font-medium xl:font-medium leading-7 text-black dark:text-white mb-2.5">
+                                    Remote Frontend Developer (Vue.js & Laravel)
+                                </h4>
+                                <p>
+                                    - Convert Figma design into pixel perfect web interface, clear code and responsive.<br />
+                                    - Optimize UI/UX, responsive and ensure interface performance. <br />
+                                    - Optimize front-end performance, ensure page loading speed, caching, lazy loading, code splitting. <br />
+                                    - Participate in code review and contribute ideas to improve the product. <br />
+                                    - Coordinate with QC in testing & fixing errors. <br />
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="flex items-center justify-between mb-5 md:w-64 md:block md:mb-0">
+                                <h6 className="text-sm font-medium text-black dark:text-white text-opacity-60 md:text-base md:text-opacity-100">
+                                    GLOBAL DESIGN IT Co,ltd
+                                </h6>
+                                <p className="text-[13px] md:text-sm text-theme">2018 - 2024</p>
+                            </div>
+                            <div className="md:flex-1 md:pl-16 relative md:before:content-[''] md:before:absolute md:before:-left-1 md:before:top-3 md:before:w-2 md:before:h-2 md:before:bg-theme md:before:rounded-full md:before:shadow-dots_glow">
+                                <h4 className="text-xl xl:text-2xl font-medium xl:font-medium leading-7 text-black dark:text-white mb-2.5">
+                                    Front-End Developer for CMS (most recent position Senior)
+                                </h4>
+                                <p>
+                                    - Take the task from the leader and convert PSD design into pixel perfect web interface, clear code, W3C standard and responsive.<br />
+                                    - Test Accessibility (heading, color contrast) and Usability (print, no javascript, keyboard focus, read voice).<br />
+                                    - Test the product on multiple browsers and real devices (iPhone, Android, Tablet).<br />
+                                    - Upload and test the sample on CMS8341 system (Coding and review member on processing fixed form, library according to spec coding cms required), ensure working as required before handing over to BrSE.<br />
+                                    - Support the team leader in code review and participate in handling complex backlogs when needed.
+                                </p>
+                            </div>
+                        </li>
                         <li>
                             <div className="flex items-center justify-between mb-5 md:w-64 md:block md:mb-0">
                                 <h6 className="text-sm font-medium text-black dark:text-white text-opacity-60 md:text-base md:text-opacity-100">
@@ -31,29 +93,6 @@ const Resume = () => {
                                 </h4>
                                 <p>
                                     Convert PSD to HTML, CSS, JavaScript, Bootstrap...according to pixel perfect design standards PSD, W3C, clean code and optimize to upload to Themeforest
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="flex items-center justify-between mb-5 md:w-64 md:block md:mb-0">
-                                <h6 className="text-sm font-medium text-black dark:text-white text-opacity-60 md:text-base md:text-opacity-100">
-                                    GLOBAL DESIGN IT Co,ltd
-                                </h6>
-                                <p className="text-[13px] md:text-sm text-theme">2018 - October 2024</p>
-                            </div>
-                            <div className="md:flex-1 md:pl-16 relative md:before:content-[''] md:before:absolute md:before:-left-1 md:before:top-3 md:before:w-2 md:before:h-2 md:before:bg-theme md:before:rounded-full md:before:shadow-dots_glow">
-                                <h4 className="text-xl xl:text-2xl font-medium xl:font-medium leading-7 text-black dark:text-white mb-2.5">
-                                    Front-End Developer for CMS (most recent position Senior)
-                                </h4>
-                                <p>
-                                    receive task from leader, convert design psd to front end interface, ensure pixel perfect design standard to hand over to leader.
-check w3c, clear code, responsive to ensure functions operate according to spec requirements of Japanese side.
-Check Accessibility for heading, color constrast.
-Check Usability for print, off javascript, keyboard focus, read voice.
-Check product on browsers, real devices such as iphone, android, tablet.
-Coding and review member on processing fixed form, library according to spec coding cms required by Japanese side. ensure output quality to hand over to brse.
-Upload code to cms8341 system from Japanese side, create template to verify if the system operates according to requirements.
-Assist leader to review code member, cms8341 system. If there is any backlog, member will join to handle it too difficult.
                                 </p>
                             </div>
                         </li>
