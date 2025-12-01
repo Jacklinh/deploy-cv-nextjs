@@ -79,13 +79,13 @@ const Profile = () => {
                                         className="text-theme"
                                         stroke="currentColor"
                                         strokeDasharray="280"
-                                        strokeDashoffset="0"
+                                        strokeDashoffset="140"
                                         strokeLinecap="round"
                                         transform="rotate(-90 40 40)"
                                     />
                                 </svg>
                                 <div className="absolute inset-0 flex items-center justify-center text-lg font-semibold text-theme">
-                                    100%
+                                    70%
                                 </div>
                             </div>
                             <p className="text-[13px] font-normal dark:font-light text-black dark:text-white/90">MERN Stack</p>
@@ -126,7 +126,7 @@ const Profile = () => {
                         </div>
                     </div>
                     <div className="mt-6">
-                        <Link href="/LeVanLinh_MERN_Stack_Developer.pdf" download target="_blank"
+                        <Link href="/CV_Levanlinh_DEV.pdf" download target="_blank"
                             className="text-center text-sm border border-theme bg-theme flex items-center justify-center gap-2 text-white rounded-4xl py-3.5 transition duration-300 text-[15px] font-semibold hover:bg-themeHover hover:border-themeHover">
                             DOWNLOAD CV
                             <span className="animate-bounce">
