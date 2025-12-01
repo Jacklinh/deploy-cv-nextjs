@@ -36,7 +36,7 @@ const About = () => {
                             TailwindCSS
                         </Link>
                         <Link href="javascript:void(0)" className="hover:text-theme dark:hover:text-white">
-                            Photoshop
+                            Photoshop/Figma
                         </Link>
                         <Link href="javascript:void(0)" className="hover:text-theme dark:hover:text-white">
                             Javascript/Jquery
@@ -45,7 +45,7 @@ const About = () => {
                             Github/Sourcetree
                         </Link>
                         <Link href="javascript:void(0)" className="hover:text-theme dark:hover:text-white">
-                            React
+                            React/Vuejs
                         </Link>
                         <Link href="javascript:void(0)" className="hover:text-theme dark:hover:text-white">
                             Ant design/ Shadcn
@@ -61,6 +61,9 @@ const About = () => {
                         </Link>
                         <Link href="javascript:void(0)" className="hover:text-theme dark:hover:text-white">
                             Next.js
+                        </Link>
+                        <Link href="javascript:void(0)" className="hover:text-theme dark:hover:text-white">
+                            Laravel
                         </Link>
                         <Link
                         href="skills"
@@ -107,7 +110,7 @@ const About = () => {
                     <ul className="grid grid-cols-2 gap-6 counters md:grid-cols-4 xl:gap-8">
                         <li>
                             <div className="mb-1 text-2xl font-semibold md:text-3xl number text-theme 2xl:text-4xl">
-                                <span>6</span>+
+                                <span>5</span>+
                             </div>
                             <div className="text-sm">Years Of Experience</div>
                         </li>
